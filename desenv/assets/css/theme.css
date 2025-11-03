@@ -1,0 +1,57 @@
+:root {
+    --background-light: #FFF;
+    --background-dark: #121212;
+    --text-light: #000;
+    --text-dark: #FFF;
+    --sidebar-background-light: #f8f9fa;
+    --sidebar-background-dark: #000;
+}
+
+body.light-theme {
+    background-color: var(--background-light);
+    color: var(--text-light);
+}
+
+body.dark-theme {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+.sidebar.light-theme {
+    background-color: #343a40;
+}
+
+.sidebar.dark{
+    background-color: #121212;
+}
+
+.sidebar.dark-theme {
+    background-color: var(--sidebar-background-dark);
+}
+
+.navbar-custom.light-theme {
+    background-color: var(--sidebar-background-light) !important;
+}
+
+.navbar-custom.dark-theme {
+    background-color: var(--sidebar-background-dark) !important;
+}
+
+#theme-switcher i {
+    color: var(--text-dark);
+}
+
+.navbar-custom.light-theme #theme-switcher i {
+    color: var(--text-light);
+}
+
+.navbar-custom.light-theme .navbar-brand,
+.navbar-custom.light-theme .bi-list,
+.navbar-custom.light-theme p,
+.navbar-custom.light-theme b {
+    color: var(--text-light) !important;
+}
+
+.sidebar.light-theme a {
+    color: var(--text-dark);
+}
